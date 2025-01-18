@@ -4,6 +4,10 @@ const { resolve } = require('path');
 const app = express();
 const port = 3000;
 
+let taxRate = 5; // 5%
+let discountPercentage = 10; // 10%
+let loyaltyRate = 2; // 2 points per $1
+
 app.use(express.static('static'));
 
 // Q1: Create an endpoint that takes a newItemPrice and cartTotal as a query parameter and returns total cart value.
